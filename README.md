@@ -11,8 +11,8 @@ Here is some sample graph.
 ## Installing / Getting started
 
 ```bash
-git clone git@github.com:l-SK-l/Yandex-Tank-influxDB-Grafana.git
-cd load-testing-stand
+git clone https://github.com/l-SK-l/Yandex-Tank-influxDB-Grafana.git
+cd Yandex-Tank-influxDB-Grafana
 ./start.sh
 ```
 After start, the grafana board will open in the default browser with monitoring of load testing
