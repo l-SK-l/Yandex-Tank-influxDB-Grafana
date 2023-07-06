@@ -1,19 +1,25 @@
 phantom:
-  address: example.com
-  ammofile: ammo.txt
-  ammo_type: uri
+  enabled: true
+  address: IP:PORT #Server address and port
+  #ammofile: ammo.txt
+  #ammo_type: uri
+  uris: #Path
+  - /index.html
   load_profile:
     load_type: rps
-    schedule: step(5, 100, 5, 30)
-  headers:
-    - "[Host: www.example.com]"
+    schedule: line(10, 100, 60s)
+  #load_profile:
+    #load_type: instances
+    #schedule: line(1,150,100s) const(150,2h)
+  #headers:
+   # - "[Host: www.example.com]"
 
 # Uncomment this if you want to autostop load testing
 # autostop:    
   # autostop: 
     # - http(5xx,25%,1s)  
 
-console:
+console: #Console output at runtime
   enabled: true
 
 telegraf:
@@ -22,5 +28,6 @@ telegraf:
 influx:
   enabled: true
   address: influx
-  database: metrics
+  port: 8086
+  database: influx
   tank_tag: 'mytank'
