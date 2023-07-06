@@ -11,7 +11,7 @@ Here is some sample graph.
 ## Installing / Getting started
 
 ```bash
-git clone git@github.com:rmedvedev/load-testing-stand.git
+git clone git@github.com:l-SK-l/Yandex-Tank-influxDB-Grafana.git
 cd load-testing-stand
 ./start.sh
 ```
