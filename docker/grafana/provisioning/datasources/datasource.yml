@@ -19,7 +19,7 @@ datasources:
     # <string> url
     url: http://influx:8086
     # <string> database name, if used
-    database: metrics
+    database: influx
     # <bool> mark as default datasource. Max one per org
     isDefault: false
     # <bool> allow users to edit datasources from the UI.
