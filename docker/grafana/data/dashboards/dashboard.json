@@ -1948,6 +1948,6 @@
   },
   "timezone": "",
   "title": "Overload",
-  "uid": "metrics",
+  "uid": "influx",
   "version": 1
 }
