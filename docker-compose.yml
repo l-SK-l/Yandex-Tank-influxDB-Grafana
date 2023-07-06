@@ -17,7 +17,7 @@ services:
       INFLUXDB_DB: metrics
 
   grafana:
-    image: grafana/grafana:latest
+    image: grafana/grafana:9.0.4
     ports:
       - "3000:3000"
     volumes:
