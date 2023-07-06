@@ -10,7 +10,7 @@ services:
       - grafana
 
   influx:
-    image: influxdb:latest
+    image: influxdb:1.8
     ports:
       - "8083:8083"
     environment:
