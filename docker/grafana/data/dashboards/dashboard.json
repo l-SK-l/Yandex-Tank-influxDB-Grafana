@@ -64,9 +64,10 @@
       }
     ]
   },
-  "description": "Overload dashboard for yandex tank",
+  "description": "A dashboard for visualizing results from the Yandex-Tank load testing tool, using the InfluxDB exporter",
   "editable": true,
   "fiscalYearStartMonth": 0,
+  "gnetId": 19128,
   "graphTooltip": 0,
   "id": null,
   "links": [],
@@ -2372,7 +2373,7 @@
       "type": "timeseries"
     }
   ],
-  "refresh": false,
+  "refresh": "10s",
   "schemaVersion": 36,
   "style": "dark",
   "tags": [],
@@ -2380,8 +2381,8 @@
     "list": []
   },
   "time": {
-    "from": "2023-07-07T06:41:33.694Z",
-    "to": "2023-07-07T06:46:27.188Z"
+    "from": "now-15m",
+    "to": "now"
   },
   "timepicker": {
     "refresh_intervals": [
@@ -2409,7 +2410,7 @@
     ]
   },
   "timezone": "",
-  "title": "Overload-Yandex-Tank",
+  "title": "Yandex-Tank Simple Dashboard",
   "uid": "influx",
   "version": 2,
   "weekStart": ""

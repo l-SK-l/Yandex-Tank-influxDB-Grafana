@@ -1,6 +1,6 @@
 # Load testing stand
 
-Stand for load testing with Yandex-Tank and [Grafana dashboard](https://grafana.com/grafana/dashboards/19128-overload-yandex-tank/)
+Stand for load testing with Yandex-Tank and [Grafana dashboard](https://grafana.com/grafana/dashboards/19129-yandex-tank-simple-dashboard/)
 
 ## Graph samples
 
