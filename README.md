@@ -17,13 +17,21 @@ cd Yandex-Tank-influxDB-Grafana
 ```
 After start, the grafana board will open in the default browser with monitoring of load testing
 
-To create the Database
+## If something is wrong
+
+### To create the Database
 ```bash
 docker exec -it "CONTAINER ID" influx
 > CREATE DATABASE influx
 > SHOW DATABASES
 > exit
 ```
+### Permissions
+If the database and dashboard do not load after start Docker
+```bash
+find . -type f -exec chmod +rx {} +
+```
+This command will recursively look through all files (-type f) in the current folder and its subfolders and then apply the chmod +rx command to all found files.
 
 ## Configuration
 
