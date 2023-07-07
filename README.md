@@ -32,6 +32,14 @@ If the database and dashboard do not load after start Docker
 find . -type f -exec chmod +rx {} +
 ```
 This command will recursively look through all files (-type f) in the current folder and its subfolders and then apply the chmod +rx command to all found files.
+Stop docker containers
+```bash
+docker stop $(docker ps -a -q)
+```
+And start script
+```bash
+./start.sh
+```
 
 ## Configuration
 
